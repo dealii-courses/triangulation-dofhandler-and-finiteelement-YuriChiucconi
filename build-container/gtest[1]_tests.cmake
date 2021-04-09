@@ -1,0 +1,5 @@
+add_test( Step1.first_grid /workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/gtest [==[--gtest_filter=Step1.first_grid]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Step1.first_grid PROPERTIES WORKING_DIRECTORY /workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container)
+add_test( Step1.second_grid /workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/gtest [==[--gtest_filter=Step1.second_grid]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Step1.second_grid PROPERTIES WORKING_DIRECTORY /workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container)
+set( gtest_TESTS Step1.first_grid Step1.second_grid)

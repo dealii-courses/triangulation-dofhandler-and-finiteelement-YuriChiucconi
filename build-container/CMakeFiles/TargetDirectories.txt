@@ -1,0 +1,8 @@
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/edit_cache.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/test.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/gtest.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/step-2-lib.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/step-1-lib.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/step-2.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/rebuild_cache.dir
+/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container/CMakeFiles/step-1.dir
