@@ -39,15 +39,16 @@ using namespace dealii;
 
 void make_grid(Triangulation<2> &triangulation)
 {
+  
   const Point<2> center(1, 0);
   const double   inner_radius = 0.5, outer_radius = 1.0;
   GridGenerator::hyper_shell(
     triangulation, center, inner_radius, outer_radius, 5);
-
+  
   static const SphericalManifold<2> manifold_description(center);
   triangulation.set_all_manifold_ids(0);
   triangulation.set_manifold(0, manifold_description);
-
+  
   for (unsigned int step = 0; step < 3; ++step)
     {
       Triangulation<2>::active_cell_iterator cell =
@@ -74,7 +75,7 @@ void make_grid(Triangulation<2> &triangulation)
 
 void distribute_dofs(DoFHandler<2> &dof_handler)
 {
-  static const FE_Q<2> finite_element(1);
+  static const FE_Q<2> finite_element(2);
   dof_handler.distribute_dofs(finite_element);
 
   DynamicSparsityPattern dynamic_sparsity_pattern(dof_handler.n_dofs(),
@@ -87,6 +88,13 @@ void distribute_dofs(DoFHandler<2> &dof_handler)
 
   std::ofstream out("sparsity_pattern1.svg");
   sparsity_pattern.print_svg(out);
+
+  std::cout << "Lenght (number of non-zero entries) for each row of the sparsity pattern" << std::endl;
+  for(unsigned int i=0; i<sparsity_pattern.n_rows(); i++)
+  {
+    std::cout << "Row:\t" << i << "\t\tLenght:\t" << sparsity_pattern.row_length(i) << std::endl;
+  }
+
 }
 
 
@@ -112,7 +120,10 @@ int
 main()
 {
   Triangulation<2> triangulation;
-  make_grid(triangulation);
+  
+  //make_grid(triangulation);
+  GridGenerator::hyper_cube(triangulation);
+  triangulation.refine_global(3);
 
   DoFHandler<2> dof_handler(triangulation);
 

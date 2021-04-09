@@ -1,0 +1,95 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "gtest",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "gtest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-gtest-Debug-e34d19b32ee447953849.json",
+					"name" : "gtest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "step-1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-step-1-Debug-2882c74d351bc31a34d5.json",
+					"name" : "step-1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "step-1-lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-step-1-lib-Debug-12332022210a1e42e622.json",
+					"name" : "step-1-lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "step-2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-step-2-Debug-68815a1a9cc7320466d5.json",
+					"name" : "step-2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "step-2-lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-step-2-lib-Debug-d79e1c5e78a9e8cf6d26.json",
+					"name" : "step-2-lib",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi/build-container",
+		"source" : "/workspaces/triangulation-dofhandler-and-finiteelement-YuriChiucconi"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}
